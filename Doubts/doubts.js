@@ -117,3 +117,72 @@ function myLeaveFunction() {
 function myOutFunction() {
     document.getElementById("onMOut").innerHTML = y += 1;
 }
+
+
+// onmousedown and onmouseup event
+function myMouseDown() {
+    document.getElementById("onMDU").style.color = "black";
+    document.getElementById("onMDU").style.backgroundColor = "red";
+    document.getElementById("onMDU").style.fontSize = "24px";
+}
+
+function myMouseUp() {
+    document.getElementById("onMDU").style.color = "black";
+    document.getElementById("onMDU").style.backgroundColor = "yellow";
+    document.getElementById("onMDU").style.fontSize = "16px";
+}
+
+
+// beginPath()
+var f = document.getElementById("bP");
+var ftx = f.getContext("2d");
+
+ftx.beginPath();
+ftx.lineWidth = "5";
+ftx.strokeStyle = "green";
+ftx.moveTo(0, 75);
+ftx.lineTo(250, 75);
+ftx.stroke();
+
+ftx.beginPath();
+ftx.strokeStyle = "purple";
+ftx.moveTo(50, 0);
+ftx.lineTo(150, 130);
+ftx.stroke();
+
+
+// moveTo()
+var g = document.getElementById("mT");
+var gtx = g.getContext("2d");
+
+gtx.beginPath();
+gtx.lineWidth = "5";
+gtx.strokeStyle = "goldenrod";
+gtx.moveTo(0, 0);
+gtx.lineTo(300, 150);
+gtx.stroke();
+
+
+// lineTo()
+var i = document.getElementById("lT");
+var itx = i.getContext("2d");
+
+itx.beginPath();
+itx.lineWidth = "5";
+itx.strokeStyle = "greenyellow";
+itx.moveTo(0, 0);
+itx.lineTo(300, 150);
+itx.stroke();
+
+
+// stroke()
+var j = document.getElementById("stroke");
+var jtx = j.getContext("2d");
+
+jtx.beginPath();
+jtx.lineWidth = "5";
+jtx.strokeStyle = "olive";
+jtx.moveTo(20, 20);
+jtx.lineTo(20, 100);
+jtx.lineTo(70, 100);
+jtx.stroke();

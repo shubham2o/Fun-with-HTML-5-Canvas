@@ -105,6 +105,7 @@
         </p>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
     <hr size="5" noshade>
 
     <!-- Difference between the onmouseleave and onmouseout events : -->
@@ -120,6 +121,77 @@
         </p>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br>
+    <hr size="5" noshade>
+
+    <!-- onmousedown and onmouseup event -->
+    <h1>onmousedown and onmouseup event</h1>
+    <p>• The onmousedown event occurs when a user presses a mouse button over an element.</p>
+    <p>• The order of events related to the onmousedown event (for the left/middle mouse button) :</p>
+
+    <!-- EXAMPLE || -->
+    <p>• <strong>EXAMPLE ||</strong>
+        Execute a JavaScript when pressing a mouse button over a paragraph :</p>
+    <div onmousedown="myMouseDown()" onmouseup="myMouseUp()">
+        <p>onmousedown :<br>
+            <span id="onMDU">Mouse over me!</span>
+        </p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <hr size="5" noshade>
+
+    <!-- beginPath() -->
+    <h1>beginPath()</h1>
+    <p>• The beginPath() method begins a path, or resets the current path.</p>
+    <p>• Use moveTo(), lineTo(), quadricCurveTo(), bezierCurveTo(), arcTo(), and arc() to create paths.</p>
+    <p>• Use stroke() method to actually draw the path on the canvas.</p>
+    <br>
+
+    <!-- EXAMPLE || -->
+    <p>• <strong>EXAMPLE ||</strong>
+        Draw two paths on the canvas; one green and one purple :</p>
+    <canvas id="bP" width="300" height="150" class="border"></canvas>
+    <br><br>
+    <hr size="5" noshade>
+
+    <!-- moveTo() -->
+    <h1>moveTo()</h1>
+    <p>• The moveTo() method moves the path to the specified point in the canvas, without creating a line.</p>
+    <p>• Use the stroke() method to actually draw the path on the canvas.</p>
+    <br>
+
+    <!-- EXAMPLE || -->
+    <p>• <strong>EXAMPLE ||</strong>
+        Begin a path, move to position 0, 0. Create a line to position 300, 150 :</p>
+    <canvas id="mT" width="300" height="150" class="border"></canvas>
+    <br><br>
+    <hr size="5" noshade>
+
+    <!-- lineTo() -->
+    <h1>lineTo()</h1>
+    <p>• The lineTo() methods adds a new point and creates a line TO that point FROM the last specified point in the
+        canvas (this method does not draw the line).</p>
+    <p>• Use the stroke() method to actually draw the path on the canvas.</p>
+    <br>
+
+    <!-- EXAMPLE || -->
+    <p>• <strong>EXAMPLE ||</strong>
+        Begin a path, move to position 0, 0. Create a line to position 300, 150 :</p>
+    <canvas id="lT" width="300" height="150" class="border"></canvas>
+    <br><br>
+    <hr size="5" noshade>
+
+    <!-- stroke() -->
+    <h1>stroke()</h1>
+    <p>• The stroke() method actually draws the path you have defined with all those moveTo() and lineTo() methods. The
+        default color is black.</p>
+    <p>• Use the strokeStyle property to draw with another color/gradient.</p>
+    <br>
+
+    <!-- EXAMPLE -->
+    <p>• <strong>EXAMPLE ||</strong>
+        Draw a path, shaped as the letter L - in a red color :</p>
+    <canvas id="stroke" width="300" height="150" class="border"></canvas>
+    <br><br>
     <hr size="5" noshade>
 
     <script src="doubts.js"></script>
