@@ -18,3 +18,8 @@ div {
 div > p {
     background-color : white;
 }
+
+
+span {
+    font-size : 30px;
+}

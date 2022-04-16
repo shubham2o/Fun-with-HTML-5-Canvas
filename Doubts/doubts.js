@@ -186,3 +186,23 @@ jtx.moveTo(20, 20);
 jtx.lineTo(20, 100);
 jtx.lineTo(70, 100);
 jtx.stroke();
+
+
+// offsetX
+function myOffsetX(event) {
+    var k = event.offsetX;
+    document.getElementById("demo").innerHTML = k;
+}
+
+
+// offsetY
+function myOffsetY(event) {
+    var l = event.offsetY;
+    document.getElementById("demo1").innerHTML = l;
+}
+
+
+// strokeRect() Method
+var m = document.getElementById("sRect");
+var mtx = m.getContext("2d");
+mtx.strokeRect(20, 20, 150, 100);
