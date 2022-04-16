@@ -273,3 +273,36 @@ grd5.addColorStop(1, "red");
 
 rtx.fillStyle = grd5;
 rtx.fillRect(20, 20, 150, 100);
+
+
+// lineWidth
+var s = document.getElementById("lW");
+var stx = s.getContext("2d");
+stx.lineWidth = 10;
+stx.strokeRect(20, 20, 80, 100);
+
+
+// HTML canvas font Property
+var t = document.getElementById("font");
+var ttx = t.getContext("2d");
+
+ttx.font = "30px Arial";
+ttx.fillText("Hello World", 10, 50);
+
+
+// strokeText Method
+var u = document.getElementById("sT");
+var utx = u.getContext("2d");
+
+utx.font = "20px Georgia";
+utx.strokeText("Hello World", 10, 50);
+
+utx.font = "30px Verdana";
+
+var grd6 = utx.createLinearGradient(0, 0, u.width, 0);
+grd6.addColorStop("0", "magenta");
+grd6.addColorStop("0.5", "blue");
+grd6.addColorStop("1.0", "red");
+
+utx.strokeStyle = grd6;
+utx.strokeText("Big Smile!", 10, 90);
