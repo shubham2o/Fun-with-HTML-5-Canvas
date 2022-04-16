@@ -206,3 +206,70 @@ function myOffsetY(event) {
 var m = document.getElementById("sRect");
 var mtx = m.getContext("2d");
 mtx.strokeRect(20, 20, 150, 100);
+
+
+// createLinearGradient
+// EXAMPLE 1
+var n = document.getElementById("lG1");
+var ntx = n.getContext("2d");
+
+var grd1 = ntx.createLinearGradient(0, 0, 170, 0);
+grd1.addColorStop(0, "black");
+grd1.addColorStop(1, "white");
+
+ntx.fillStyle = grd1;
+ntx.fillRect(20, 20, 150, 100);
+
+
+// EXAMPLE 2
+var o = document.getElementById("lG2");
+var otx = o.getContext("2d");
+var grd2 = otx.createLinearGradient(0, 0, 0, 170);
+
+grd2.addColorStop(0, "black");
+grd2.addColorStop(1, "white");
+
+otx.fillStyle = grd2;
+otx.fillRect(20, 20, 150, 100);
+
+
+// EXAMPLE 3
+var p = document.getElementById("lG3");
+var ptx = p.getContext("2d");
+
+var grd3 = ptx.createLinearGradient(0, 0, 170, 0);
+grd3.addColorStop(0, "black");
+grd3.addColorStop(0.5, "red");
+grd3.addColorStop(1, "white");
+
+ptx.fillStyle = grd3;
+ptx.fillRect(20, 20, 150, 100);
+
+
+// addColorStop() Method
+// EXAMPLE 1
+var q = document.getElementById("aCS1");
+var qtx = q.getContext("2d");
+
+var grd4 = qtx.createLinearGradient(0, 0, 170, 0);
+grd4.addColorStop(0, "black");
+grd4.addColorStop(1, "white");
+
+qtx.fillStyle = grd4;
+qtx.fillRect(20, 20, 150, 100);
+
+
+// EXAMPLE 2
+var r = document.getElementById("aCS2");
+var rtx = r.getContext("2d");
+
+var grd5 = rtx.createLinearGradient(0, 0, 170, 0);
+grd5.addColorStop(0, "black");
+grd5.addColorStop("0.3", "magenta");
+grd5.addColorStop("0.5", "blue");
+grd5.addColorStop("0.6", "green");
+grd5.addColorStop("0.8", "yellow");
+grd5.addColorStop(1, "red");
+
+rtx.fillStyle = grd5;
+rtx.fillRect(20, 20, 150, 100);
