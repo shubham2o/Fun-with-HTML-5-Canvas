@@ -51,3 +51,69 @@ gradient1.addColorStop("1.0", "red");
 
 btx.strokeStyle = gradient1;
 btx.strokeText("Big Smile!", 10, 50);
+
+
+// lineJoin Property
+// EXAMPLE 1
+var d = document.getElementById("lJ1");
+var dtx = d.getContext("2d");
+dtx.beginPath();
+dtx.lineWidth = 10;
+dtx.lineJoin = "round";
+dtx.moveTo(20, 20);
+dtx.lineTo(100, 50);
+dtx.lineTo(20, 100);
+dtx.stroke();
+
+
+// lineCap Property
+// EXAMPLE 1
+var e = document.getElementById("lC1");
+var etx = e.getContext("2d");
+
+etx.beginPath();
+etx.lineWidth = 10;
+etx.lineCap = "butt";
+etx.moveTo(20, 20);
+etx.lineTo(200, 20);
+etx.stroke();
+
+etx.beginPath();
+etx.lineCap = "round";
+etx.moveTo(20, 40);
+etx.lineTo(200, 40);
+etx.stroke();
+
+etx.beginPath();
+etx.lineCap = "square";
+etx.moveTo(20, 60);
+etx.lineTo(200, 60);
+etx.stroke();
+
+
+// Difference between the onmousemove, onmouseenter and mouseover events: -- >
+var x = 0,
+    y = 0,
+    z = 0;
+
+function myMoveFunction() {
+    document.getElementById("onMM").innerHTML = z += 1;
+}
+
+function myEnterFunction() {
+    document.getElementById("onME").innerHTML = x += 1;
+}
+
+function myOverFunction() {
+    document.getElementById("onMO").innerHTML = y += 1;
+}
+
+
+// Difference between the onmouseleave and onmouseout events :
+function myLeaveFunction() {
+    document.getElementById("onML").innerHTML = x += 1;
+}
+
+function myOutFunction() {
+    document.getElementById("onMOut").innerHTML = y += 1;
+}
